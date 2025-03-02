@@ -77,7 +77,7 @@ index_sector_exposure = (
     .drop(columns=["Weight"])
 )
 
-# Merge DataFrames and replace NaN values with 0
+# Merge DataFrames 
 comparison_df = pd.merge(portfolio_sector_exposure, index_sector_exposure, on="Market Sector", how="outer").fillna(0)
 
 # Calculate the difference
@@ -123,7 +123,7 @@ if underweight_sectors:
     for sector in underweight_sectors:
         print(f"  - {sector}")
 
-# Visualization
+# Plot
 x_labels = comparison_df["Market Sector"]
 x = np.arange(len(x_labels))
 width = 0.4
@@ -132,7 +132,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 bars1 = ax.bar(x - width/2, comparison_df["Portfolio_Exposure"], width, label="Portfolio", color="#FFA500")
 bars2 = ax.bar(x + width/2, comparison_df["Index_Exposure"], width, label="Index", color="#4D4D4D")
 
-# Function to add data labels
+# Add data labels
 def add_labels(bars):
     for bar in bars:
         height = bar.get_height()
