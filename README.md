@@ -2,15 +2,11 @@
 
 ## Overview
 This project compares **Portfolio Exposure** vs **Index Exposure** across different Market Sectors.  
-It uses **Python (Pandas, Matplotlib, NumPy)** to process and visualize financial data.
 
 ---
 
----
-
-## Project Structure
-
-Project Repository ├── dummy_portfolio_file.csv ├── dummy_index_file.csv ├── analysis.py # Main script ├── portfolio_vs_index.png # Saved plot ├── output.txt # Code output ├── README.md # Project documentation
+## Full Python Script  
+You can view the complete code **[here](portfolio_vs_index.py)**.
 
 ---
 
