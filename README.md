@@ -6,6 +6,14 @@ It uses **Python (Pandas, Matplotlib, NumPy)** to process and visualize financia
 
 ---
 
+---
+
+## Project Structure
+
+Project Repository ├── dummy_portfolio_file.csv ├── dummy_index_file.csv ├── analysis.py # Main script ├── portfolio_vs_index.png # Saved plot ├── output.txt # Code output ├── README.md # Project documentation
+
+---
+
 ## Code Output
 
 Sector Comparison:
@@ -32,13 +40,5 @@ Summary of Notable Differences
 ## Portfolio vs Index Exposure Chart
 ![Portfolio vs Index Exposure](portfolio_vs_index.png)
 
----
 
-## Project Structure
 
----
-
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/csrfnc/JA-Interview-Test.git
